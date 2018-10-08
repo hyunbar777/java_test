@@ -1,6 +1,7 @@
 
 spring:
   datasource:
+    #重新下载与自己服务器版本相同的驱动
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
