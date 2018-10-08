@@ -31,9 +31,9 @@ public class HelloController {
 //        model.addAttribute("hello","粗来");
 //        return "success";
 //    }
-@RequestMapping("/success")
-public String success(Map<String,Object> map){
-    map.put("hello","原来是@RestController的问题");
-    return "success";
-}
+    @RequestMapping("/success")
+    public String success(Map<String,Object> map){
+        map.put("hello","原来是@RestController的问题");
+        return "success";
+    }
 }
