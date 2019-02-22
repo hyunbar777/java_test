@@ -1,0 +1,29 @@
+ # spring.messages.basename=i18n.login
+
+    #禁用掉模板引擎的缓存
+   # spring.thymeleaf.cache=true
+spring:
+  messages:
+    basename: i18n.login
+  thymeleaf:
+    cache: true
+  datasource:
+    #重新下载与自己服务器版本相同的驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/jdbc?serverTimezone=UTC&characterEncoding=utf8&useSSL=false
+    #sql 文件 是一个list数组
+    #schema:
+     #- classpath:sql/dep.sql
+    ##springboot2.x需加上才能执行sql
+    #initialization-mode: always
+
+    ##第二种
+    type: com.alibaba.druid.pool.DruidDataSource
+
+    #filters: stat,wall,log4j
+
+#mybatis:
+#  config-location: classpath:mybatis/mybatis-config.xml
+#  mapper-locations: classpath:mybatis/mapper/*.xml
